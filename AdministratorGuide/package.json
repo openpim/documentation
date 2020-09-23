@@ -1,0 +1,19 @@
+{
+  "name": "AdministratorGuide",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "authors": {
+    "name": "",
+    "email": ""
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.4",
+    "vuepress": "^1.5.3"
+  }
+}
