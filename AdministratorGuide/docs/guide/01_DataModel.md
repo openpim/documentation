@@ -5,7 +5,7 @@
 ## What is data model?
 
 Different businesses and companies have different needs in product data. Someone needs to store only basic data, another has to store addition information like logistic,
-аллергенах, certifications (for food, for example), etc.
+certifications (for food, for example), etc.
 
 As a result, it is impossible to create a system that will be ready to store all possible types of information without any configuration.
 Instead, we give you the ability to customize the system for your specific needs, define yourself what information and how you need to store it.

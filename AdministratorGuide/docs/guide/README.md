@@ -10,4 +10,4 @@ Ability to make automated actions that can be used to check quality of your prod
 
 User management and configuration of access is described in section [User Management](./04_UserManagement.md).
 
-Section [Dashboards](./Dashboards.md) will show you analytic abilities of the system.
+Section [Dashboards](./05_Dashboards.md) will show you analytic abilities of the system.

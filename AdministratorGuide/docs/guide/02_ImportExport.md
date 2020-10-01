@@ -23,7 +23,7 @@ You can learn more about this tool from this [tutorial](https://www.talend.com/r
 
 1. First you need to install Talend Open Studio itself and Java (required for Talend to work).
 
-2. Then you need to download the components for integrating our system and Talend: [pim-components.car](https://openpim.org/talend/pim-components.car).
+2. Then you need to download the components for integrating our system and Talend: [pim-components.car](https://www.openpim.org/talend/pim-components.car).
 
 3. Finally, you need to run the command:
 
