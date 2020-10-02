@@ -218,3 +218,45 @@ The component has the following options:
 - `Show debug output` - If this option is selected, the system will display additional debug information during export
 
 This component has 2 outputs. If the file is unloaded normally, it will go to the main exit, otherwise it will go to an reject exit. This way you can filter out all erroneous entries.
+
+
+## Examples
+
+You can download examples of talend export and import jobs at [https://www.openpim.org/talend/export-import.zip](https://www.openpim.org/talend/export-import.zip).
+
+Then you should import those examples into your Talend Studio. Use should right click at `Job Designs` node in navigation tree at the left side and select `Import items` menu.
+
+After this you can select downloaded zip file and import `fullExport` and `fullImport` jobs together with all necessary metadata.
+
+<img src="./images/talend2.png" width="500">
+
+### fullExport job
+
+fullExport job is example of export all possible kind of data from system. It shows how to export not only Items and Relations, but also all system configuration.
+
+You should enable first corresponding sub job to run it. For example, you can right click at first element of `Items` sub job and select `Activate current subJob` to activate Items export.
+
+<img src="./images/talend3.png" width="500">
+
+Here you can see that Talend will export all Items with `typeIdentifier` equals `item` (this is all products in our data model) into XML file.
+
+<img src="./images/talend4.png" width="500">
+
+If we will open schema of XML file, we will see what data will be exported from Items:
+
+<img src="./images/talend5.png">
+
+Here we can see that we will export all possible system information, like id, English name, all necessary identifiers, time of creation and modification, etc. 
+Also 4 attributes values will be exported: `brand`, `description`, `model` and `style`.
+
+### fullImport job
+
+fullImport job is example of all possible kind of imports that systems support. It includes import of Items, Relations and also all data model.
+
+You should also activate corresponding sub job before using it. For example, here is sub job to import Items from XML file.
+
+<img src="./images/talend6.png" width="600">
+
+First we must specify the following columns to make possible to import Item: `identifer`, `typeIdentifier` and `parentIdentifier`.
+
+Also we provide addition information like English name of Item and values for 4 attributes: `brand`, `description`, `model` and `style`.
